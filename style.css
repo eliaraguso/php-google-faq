@@ -9,3 +9,58 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Header */
+header {
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+#header-top {
+    display: flex;
+    justify-content: space-between;
+    /* border: 5px solid red; */
+    align-items: center;
+    padding: 20px 20px;
+}
+
+#header-top-left {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#header-top-left img {
+    margin-right: 10px;
+}
+
+#header-top #user-logo {
+    background-color: rgb(74, 255, 216);
+    border-radius: 50%;
+    /* padding: px; */
+}
+
+#header-top img,
+#header-top h3,
+#header-top a,
+#header-top #user-logo,
+#header-bottom li,
+#header-bottom a {
+    display: inline-block;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+
+
+#header-bottom {
+    padding: 10px 10px;
+    /* border: 5px solid red; */
+
+}
+#header-bottom ul {
+    list-style: none;
+}
+
+#header-bottom li {
+    margin-right: 30px;
+}
+
+

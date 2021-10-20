@@ -63,14 +63,42 @@ $faqs = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800;1,324&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <header>
+        <div id="header-top">
+            <div id="header-top-left">
+                <img src="./googlelogo_clr_74x24px.svg" alt="Google logo image">
+                <h3>Privacy e termini</h3>
+            </div>
+            <div id="header-top-right">
+                <a href="#"><i class="fas fa-th"></i></a>
+                <div id="user-logo">E</div>
+            </div>
+        </div>
+        <div id="header-bottom">
+            <ul>
+                <li><a href="#">Introduzione</a></li>
+                <li><a href="#">Norme sulla privacy</a></li>
+                <li><a href="#">Termini di servizio</a></li>
+                <li><a href="#">Tecnologie</a></li>
+                <li><a href="#">Domande frequenti</a></li>
 
+            </ul>
+        </div>
 
-
-
-
+    </header>
+    <main>
+        <div class="container">
+            <?php foreach ($faqs as $faq) { ?>
+                <h3><?php echo $faq["domanda"]; ?></h3>
+                <p class="risposta"><?php echo $faq["risposta"]; ?></p>
+                <br>
+            <?php } ?>
+        </div>
+    </main>
 
 </body>
 
